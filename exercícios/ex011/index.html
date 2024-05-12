@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em vários disposistivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="metadata" autoplay controls loop> <!--o loop se usa quando o audio acabar tocar de novo-->
+        <source src="midia/puppy-love(Sting)-twin musicom.mp3" type="audio/mpeg">
+        <source src="midia/puppy-love(Sting)-twin musicom.ogg" type="audio/ogg">
+        <source src="midia/puppy-love(Sting)-twin musicom.wav" type="audio/wav">
+        <!--se um tipo não reprozuzir, o outro vai. Caso nenhum reproduza:-->
+        <p>Infelizmente seu navegador não consegue reprozuzir áudio <a href="midia/puppy-love(Sting)-twin musicom.mp3">clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+
+</body>
+</html>
