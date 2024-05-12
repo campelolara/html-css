@@ -3,4 +3,4 @@
 
  olá!
 
- <a href="https://campelolara.github.io/html-css/desafios/d010/android.html" target="_blank"> Executar o desafio d010</a>
+ <a href="https://campelolara.github.io/html-css/exercicios/ex001/index.html" target="_blank"> Executar o exercício 001</a>
