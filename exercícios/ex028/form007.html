@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="POST">
         <p>
             <!--esse é limitado à certas opções-->
             <label for="iset">Estado</label>
@@ -45,8 +45,8 @@
         </p>
 
         <p>
-            <label for="imsg">Mensagem</label>
-            <textarea name="msg" id="imsg" cols="40" rows="10"></textarea>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
         <!--esse cols e rows, não é o máx, e sim a quant. que vai aparecer-->
