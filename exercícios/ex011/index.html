@@ -7,20 +7,42 @@
 </head>
 <body>
     <h1>Imagem dinâmica</h1>
-    <p>tente abrir esse site em vários disposistivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
     <picture>
+        <!--PEQUENA-->
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--MÉDIA-->
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--GRANDE-->
         <img src="imagens/foto-g.png" alt="imagem flexível">
     </picture>
+
     <h1>Reproduzindo áudio</h1>
-    <audio preload="metadata" autoplay controls loop> <!--o loop se usa quando o audio acabar tocar de novo-->
+    <!--
+    autoplay: iniciar automaticamente
+    controls: botões de controle
+    loop: repetir
+    -->
+
+    <audio preload="metadata" autoplay controls loop> 
+        <!--em vários formatos caso um não seja compatível-->
         <source src="midia/puppy-love(Sting)-twin musicom.mp3" type="audio/mpeg">
         <source src="midia/puppy-love(Sting)-twin musicom.ogg" type="audio/ogg">
         <source src="midia/puppy-love(Sting)-twin musicom.wav" type="audio/wav">
-        <!--se um tipo não reprozuzir, o outro vai. Caso nenhum reproduza:-->
+        <!--caso nenhum funcione-->
         <p>Infelizmente seu navegador não consegue reprozuzir áudio <a href="midia/puppy-love(Sting)-twin musicom.mp3">clique aqui</a> para baixar o arquivo MP3</p>
     </audio>
 
+    <h1>Vídeos</h1>
+    <!--Local-->
+    <video width="560" controls> 
+        <source src="midia/rompeolas.mp4" type="video/mp4">
+        <!--caso nenhum funcione-->
+        <p>seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+
+    <!--Externos-->>
+    <h2>do youtube:</h2>
+    <!--da pra pegar esse código quando aperta em compartilhar o vídeo la no youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JJis0sld2cM?si=CPpNGyPESPddekTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>

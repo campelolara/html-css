@@ -3,12 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro exercício</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico"type="image/x-icon"> 
+    <title>Tratamentos com textos</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+    </style>
 </head>
 <body>
-   <h1>Olá Mundo!</h1>
-   <hr>
-   <p>Esse é meu primeiro documento HTML! Estou muito feliz!</p>
-   <p>Este é um momento único! Estou criando um site!</p>
+    <!--título-->
+    <h1>Hello World!</h1>
+
+    <!--linha horizontal-->
+    <hr> 
+
+    <h2>Tags</h2>
+    <!--faz </> aparecer num texto-->
+    <p> &lt;p&gt; e &lt;/p&gt;</p>
+
+    <p>para quebrar uma linha <br> usa-se &lt;br&gt;.
+    </p>
+
+    <h3>Tags Semânticas</h3>
+    <!--dar significado-->
+    <p>eu moro na: <address>Rua dos Capexabas, 229 - Botafogo - RJ</address> </p>
+
+    <h2>Símbolos</h2>
+    <p>espaço em branco &nbsp;</p>
+    <p>marca registrada &reg;</p>
+    <p>copyright &copy;</p>
+    <p>trade mark &trade;</p>
+    <p>euro &euro;</p>
+    <p>libra &pound;</p>
+    <p>yen &yen;</p>
+    <p>cent &cent;</p>
+    <p>vazio &empty;</p>
+    <p>soma &sum;</p>
+    <p>delta &Delta;</p>
+    <p>seta esquerda &larr;</p>
+    <p>seta acima &uarr;</p>
+    <p>seta direita &rarr;</p>
+    <p>seta baixo &darr;</p>
+
+    <h1>Emojis</h1>
+    <!--Ir no emojipedia e buscar o código na aba informática técnica-->
+    <p>&#x1F480;</p> 
+    <p>&#x1F9A5;</p>
+
+    <h2>Imagem</h2>
+    <!--a imagem precisa ta na mesma pasta que esse código-->
+
+    <!--interna-->
+    <img src="shrek402.jpg" alt="shrek">
+
+    <!--externa-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5r86iRE78RBHh5xpd5SGy0PWcUN40ixL5qg&usqp=CAU" alt="burro">
+
+    <hr>
+
+    <h1>Formatações de Texto</h1>
+    <h2>Negrito/Destaque via HTML</h2>
+    <!--Não semântica-->
+    <p><b>não semântica</b></p>
+
+    <!--Semântica-->
+    <p><strong>com semântica</strong></p>
+
+    <h2>Itálico/Ênfase</h2>
+    <!--Não semântica-->
+    <p><i>não semântica</i></p>
+
+    <!--Semântica-->
+    <p><em>com semântica</em></p> 
+    
+    <!--ctrl, shift e p: abb > pra por uma tag em uma frase ja escrita-->
+    
+    <h2>Texto marcado</h2>
+    <p><mark style="background-color: rgba(121, 121, 186, 0.618);">um texto marcado</mark></p>
+
+    <h2>Texto pequeno</h2>
+    <p>tem um <small>texto pequeno </small>neste parágrafo</p>
+
+    <h2>Texto deletado</h2>
+    <p>Mrcação de <del>texto como excluído</del>, pode ser lido, porém, não considerado</p>
+
+    <h2>Texto inserido</h2>
+    <!--Não Semântico-->
+    <p><u>Sublinhado</u></p>
+
+    <!--Semântico-->
+    <p><ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionada depois</p>
+    
+    <h2>Texto sobrescrito</h2>
+    <p>x<sup>20</sup>+3</p>
+
+    <h2>Texto subscrito</h2>
+    <p>H<sub>2</sub>O</p>
+
+    <h2>Código-fonte</h2>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é Ímpar)
+    print('Fim do programa')
+        </code>
+    </pre> <!--o pre faz considerar a quebra de linhas-->
+
+    <h2>Citações</h2>
+    <h3>Simples</h3>
+    <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <h3>Complexa</h3>
+    <p>No livro Quincas Borba de Machado de Assis, o personagem expressa:</p>
+    <blockquote cite="https://www.goodreads.com/work/quotes/84232-quincas-borba#:~:text=Tudo%20chorando%20seria%20mon%C3%B3tono%2C%20tudo,se%20o%20equil%C3%ADbrio%20da%20vida."> <!--só para a parte interna esse link-->
+        Tudo chorando seria monótono, tudo rindo cansativo; mas uma boa distribuição de lágrimas e polcas, soluços e sarabandas, acaba por trazer à alma do mundo a variedade necessária, e faz-se o equilíbrio da vida.
+    </blockquote>
+
+    <h2>abreviações</h2>
+    <p>estou estudando <abbr title="HyperText Markup Language">html</abbr> e <abbr title="Cascading Style Sheets">css</abbr>. </p>
+
+    <h2>texto invertido</h2>
+    <p><bdo dir="rtl">Seja la pra o que vou estar aprendendo com isso</bdo></p>
+
+    <hr>
+
+    <h1>Listas</h1>
+    <h2>Ordenadas</h2>
+    <ol type="1">
+        <li>Acordar
+        <li>Tomar café
+        <li>Escovar os dentes
+    </ol>
+
+    <h2>Não ordenadas</h2>
+    <ul type="disc">
+        <li>Pão
+        <li>Leite
+        <li>Queijo
+        <li>Tomate
+    </ul>
+
+    <h2>Mista</h2>
+    <ol>
+        <li>Antigas
+        <ol type="a">
+            <li>Clipper
+            <li>Visual Basic
+            <li>Fortran
+        </ol>
+        <li>Novas
+        <ol type="a">
+            <li>PHP
+            <li>Phyton
+            <li>JavaScript
+        </ol>
+    </ol>
+
+    <h2>De definições</h2>
+    <dl>
+        <dt>HTML</dt> <!--termo-->
+        <dd>Linguagem de marcação para criação do conteúdo de um site</dd> <!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+
 </body>
 </html>

@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
+    <title>Links</title>
 </head>
 <body>
     <h1>Usando links externos</h1>
-    <p>vídeo de um gatinho: <a href="https://youtu.be/dQw4w9WgXcQ?si=ll9w9MyAcNoGkftK">clique aqui!</a></p>
-    <p> vai estudar <a href="https://www.unip.br/aluno/central/sistemas" target="_blank" rel="external">vai</a></p> <!--abrir em outa aba, não sobrepor o site que estou-->
-    <h1>Usando Links Internos</h1> <!--página dentro do nosso servidor. Nossa.-->
-    <p>link para acessar outra página deste mesmo site <a href="pag002.html" rel="next" target="_self">aqui</a></p>
+    <!--target e rel para abrir em outa aba e não sobrepor o site que estou-->
+    <p>vídeo de um gatinho: <a href="https://youtu.be/dQw4w9WgXcQ?si=ll9w9MyAcNoGkftK" target="_blank" rel="external">clique aqui!</a></p>
+
     <p>pro mecanismo de busca não associar certas páginas externas a este site. ex.: empresas como a <a href="https://www.microsoft.com/pt-br" target="_blank" rel="nofollow">microsoft</a></p> <!--é como dizer pro mecanismo de busca que não dou um aval a esse site-->
-    <p><a href="noticias/pag003.html" rel="next" target="_self">acessar página</a> em outra pasta</p>
+    
+    <h1>Usando Links Internos</h1> 
+    <!--Outra página dentro do servidor-->
+    <p>link para acessar outra página deste mesmo site <a href="pag002.html" rel="next" target="_self">aqui</a></p>
+    
     <h1>Usando Links para download</h1>
     <ul>
         <li><a href="livro/10 - Ligações em toda parte.pdf" download="Livro/10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em pdf</a>
+
         <li><a href="livro/10 - Ligações em toda parte.zip" download="livro/10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em zip</a>
     </ul>
 </body>
