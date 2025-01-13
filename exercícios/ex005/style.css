@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#exemplo1 > p {
+    /* oculta o parágrafo*/
+    display: none; 
+}
+
+#exemplo1:hover > p {
+    /*exibe o parágrafo*/
+    display: block; 
+    color: white;
+    background-color:  rgb(209, 73, 91);
+    width: 300px;
+}
+#exemplo1:hover {
+    color:  rgb(209, 73, 91);
+}
+
+/*estilo do link*/
+a {
+    color: #6a994e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*quando visita o link*/
+a:visited {
+    color: #386641;
+}
+
+/*quando passa o mouse em cima do link*/
+a:hover {
+    text-decoration: underline;
+    color: #bc4749;
+}
+
+/*quando toca no link*/
+a:active {
+    color: #f77f00;
+}
+
+.especial {
+    background-color: #dde5b6 ;
+}
+
+.especial::before {
+    content: '⫷' ;
+}
+
+.especial::after{
+    content: '⫸';
+}
+
+.exemplo2 {
+    /*itens lado a lado*/
+    display: inline-block;
+    border: 2px solid rgb(174, 174, 174);
+    background-color: lightgrey;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d1 {
+    background-color: rgb(255, 209, 102);
+    border: 2px solid rgb(237, 174, 73);
+}
+
+div#d2 {
+    background-color: rgb(6, 214, 160);
+    border: 2px solid rgb(0, 121, 140);
+
+}
+
+div#d3 {
+    background-color: rgb(17, 138, 178);
+    border: 2px solid rgb(48, 99, 142);
+}
+
+div#d1:hover, div#d2:hover, div#d3:hover{
+    background-color: rgb(209, 73, 91);
+    border: 2px solid rgb(186, 47, 66);
+    color: white;
+}
+
+.exemplo3{
+    background-color: rgb(17, 138, 178);
+    height: 300px;
+    width: 300px;
+
+    /*
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+    */
+    border: 10px solid rgb(6, 214, 160);
+
+    /*sentido horário
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    */
+    padding: 10px 20px 10px 30px;
+
+    /*
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    */
+    margin: 10px auto 40px auto;
+
+    /*
+    LINHA EXTERIOR
+    outline-width: 5px;
+    outline-style: dashed;    PONTILHADO
+    outline-color: salmon;
+    */
+    outline: 5px dashed rgb(255, 209, 102);
+
+}

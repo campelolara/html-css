@@ -6,7 +6,37 @@
     <title>Teste de Imagem de Fundo</title>
     <style>
         body {
-            background-image: url('imagens/wallpaper001.jpg');
+            height: 98vh; /*98% da altura da tela*/
+
+            /*
+            background-color: white;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-position: right bottom;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+    
+            shorthand - background
+              color > image > position > repeat > [size] > attachment
+
+              size não funciona ainda
+            */
+            background: white url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png') right bottom  repeat-x fixed;
+
+            background-size: 100px 100px;
+            border: 2px dashed black;
+
+            /*
+            exemplos de background-position:
+            left top;
+            left center;
+            right bottom;
+            center center;
+           */
+
+           /*
+           exemplos de background-size:
+           
+           */
         }
         
         div.quadrado {
@@ -14,8 +44,10 @@
             border: 2px solid black;
             border-radius: 10px;
             background-color: lightgray;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
+            margin: 10px 0px 0px 10px;
+            
         }
 
         div#q1 {
