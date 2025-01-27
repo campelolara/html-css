@@ -1,0 +1,40 @@
+FLEX-BOX
+
+### FLEX CONTAINER (PAI)
+display: flex;
+
+flex-direction: row ou column / row-reverse ou column-reverse;
+flex-wrap: wrap, nowrap ou wrap-reverse;
+
+flex-flow: flex-direction + flex-wrap;
+
+justify-content: center, flex-start, flex-end, space-around, space-between ou space-evenly;
+
+align-items: center, flex-start, flex-end, stretch, baseline ou normal;
+
+align-content: center, stretch, flex-start, flex-end, space-around, space-between ou space-evenly;
+
+
+### FLEX ITEMS (FILHOS)
+order: <numero>;  = ordem
+
+<!--
+  0 = não pode crescer/encolher 
+  1 ou mais = pode crescer/encolher
+
+  caso tenhamos dois elemento 
+   1 e 2 
+   o que tem flex-grow 2 crescerá o dobro do 1
+-->
+
+flex-grow: <numero>; = o quanto crescerá, padrão = 0
+
+flex-shrink: <numero>>; = o quanto encolherá, padrão = 1
+
+flex-basis: <px>; = comprimendo inicial
+
+flex: flex-grow + flex-shrink + flex-basis;
+ex.: flex: 0 0 200px; ou só uma porcentagem
+
+align-self: alinhamento, substitui align items, mesmo valores desse
+

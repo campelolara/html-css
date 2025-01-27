@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <ul>
+        <li><a href="../ex025/fundo001.html" target="frame">fundo 001</a></li>
+        <li><a href="../ex001/index.html" target="frame">fundo 002</a></li>
+        <li><a href="../ex005/hover.html" target="frame">fundo 003</a></li>
+    </ul>
+
+    <iframe src="" name="frame" srcdoc="<h1>escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laboriosam facere cumque doloribus ipsum obcaecati possimus.</p>"> <!--pode ser qualquer nome-->
+        [ Infelizmente seu navegador não é compatível! ]
+    </iframe>
+
+</body>
+</html>

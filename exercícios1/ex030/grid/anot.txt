@@ -1,0 +1,24 @@
+GRID
+### CONTAINER (PAI)
+display: grid;
+
+//gap são os espaços entre linhas e colunas
+
+grid-template-columns: <numero>;
+
+grid-template-rows: <numero>;
+
+gap: row-gap + column-gap;
+
+grid-template-areas
+
+
+### ITEMS (FILHOS)
+grid-column 
+    grid-column-start: <numero>;
+    grid-column-end: <numero>;
+grid-row
+    grid-row-start
+    grid-row-end
+grid-area
+   

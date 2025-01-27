@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            background-color: rgb(227, 223, 223); /*só pro fundo ficar diferente do site rapidola*/
+            display: block;
+            margin: auto;
+            width: 300px;
+        } 
+
+        p.erro {
+            color: darkred;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!--Externo-->
+    <p>
+       O repositório do Guanabara
+
+       <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+          no<a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a>
+       </iframe>
+
+       também é bem legal!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque beatae error, ea quia iure adipisci velit optio officia officiis expedita illum sed quo, rem dolores! Maxime itaque quis molestias!</p>
+
+    <!--Interno-->
+    <iframe src="../ex026/tabela006.html" frameborder="0" height="500">
+        <p class="erro">[ Infelizmente seu navegador não é compatível com isso! :/ ]</p>
+    </iframe>
+
+    <h1>Cadastro de outro site</h1>
+   <iframe src="páginas extras/pag001.html" sandbox="sandbox" referrerpolicy="no-referrer">
+    [Seu navegador não é compatível com isso!]
+   </iframe>
+    
+</body>
+</html>

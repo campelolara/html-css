@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(252, 186, 221);
+    
+}
+
+header {
+    background-image: url(https://www.semana.com/resizer/v2/5X52KGYYMRHLVEMTX77XFIMOXE.jpg?auth=6311c9e9e124d70c410279f318a244f50f1ffbd9eb4c974a764e4c4060850690&smart=true&quality=75&width=1280&fitfill=false);
+    height: 400px;
+}
+
+.cabeca{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    padding: 10px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.cabeca:hover{
+    background-color: white;
+
+}
