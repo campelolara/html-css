@@ -1,0 +1,226 @@
+pro scrip ser em outro arquivo
+no HTML:
+<script src="script.js"></script>
+
+
+COMANDOS
+    window.alert("Alerta na Tela!")
+    window.confirm("Ok?");
+    window.prompt("Escreva algo:")
+    document.write("Escreve na Tela")
+
+DECLARAR UMA VARIÁVEL
+    var nome = window.prompt("Digite seu nome:");  
+
+CONVERSÃO DE TIPOS DE DADOS
+    number > string
+        Number() 
+        Number.parseInt()   //especificado
+    string > number
+        String(n)
+        n.toString()
+
+// <> = ilustrativo
+'<string>' + <var>  = concatenação
+`<string> ${<var>}` = template string
+
+FORMATANDO STRINGS
+    <var>.length = quantos caracteres tem
+    <var>.toUpperCase() = tudo em maiúsculo
+    <var>.toLowerCase() = tudo em minúsculo
+
+FORMATANDO NÚMEROS
+    //fixa em determinadas casas decimais
+    <var>.toFixed(<quantidade_casas_decimais>)
+
+    //formata valor em BRL, da pra mudar BRL por outras moedas
+    <var>.toLocalestring('pt-BR', {style: 'currency', currency: 'BRL'})
+
+TROCAR UMA COISA POR OUTRA
+    <var>.toFixed(2).replace('.', ',') // . por ,
+
+OPERADORES JS
+    ARITMÉTICOS
+        +  = adição                     
+        -  = subtração
+        *  = multiplicação
+        /  = divisão
+        %  = resto de uma divisão
+        ** = potência
+    ATRIBUIÇÃO
+        var n = 3
+        n = n + 4  ou  n += 4
+        n = n - 5  ou  n -= 5
+        n = n * 3  ou  n *= 3
+        ...
+        n++ (pós) e ++n (pré) //soma +1
+        n-- (pós) e --n (pré) //subtrai -1
+    RELACIONAIS
+        > maior
+        < menor
+        >= maior ou igual que
+        <= menor ou igual que
+        == igual
+        != diferente
+        IDENTIDADE
+            5 == 5     //true
+            5 == '5'   //true, não analisa o tipo
+            5 === '5'  //false, analisa o tipo
+            5 === 5    //true
+    LÓGICOS
+       !    negação
+       &&   conjunção (e)
+       ||   disjunção (ou)
+
+    TERNÁRIO
+       <teste_lógico>?<true>:<false>
+       ex.:
+       var media = 5
+       media >= 7?'Aprovado':'Reprovado'
+       //retorna o valor true ou o false
+
+DOCUMENT OBJECT MODEL - DOM
+modelo de objetos para o documemnto = conj. de objetos dentro do navegador que da acesso à componentes webs internos
+    ARVORE DOM = pesquise, vou fazer aqui não <3
+    MÉTODOS DE ACESSO
+       marca   =  getElementsByTagName()
+       ID      =  getElementById()
+       nome    =  getElementsByName()
+       classe  =  getElementsByClassName()
+       seletor =  querySelector()  ou  querySelectorAll()  //elementos css
+
+se tiver mais de um:
+[num]  = no final para especificar por exemplo qual parágrafo é
+
+//retornam o conteúdo de um elemento: 
+.innerText = pega o texto
+.innerHTML = pega o conteúdo HTML
+
+    EVENTOS
+    coisas que podem acontecer
+        Eventos de Mouse
+            mouseenter = quando encosta
+            mousemove  = quando move dentro
+            mousedown  = quando pressiona o botão
+            mouseup    = qunado solta o botão
+            click      = pressiona e solta rapidamente
+            mouseout   = move pra fora
+        
+        exemplos:
+            dentro do HTML
+                <div onclick="clicar() onmouseenter="entrar()">EVENTO</div>
+            dentro do SCRIPT
+                area.addEventListener('click', clicar)
+                area.addEventListener('mouseenter', entrar)
+                area.addEventListener('mouseout', sair)
+
+//pesquisar JS DOM Event List
+
+// .value    = especifica que é o valor que deseja, ex de um input
+// .getHours = hora atual
+
+CONDIÇÕES
+   if:
+        if(condição){
+            <comando>
+        } else if(){
+            <comando>
+        } else {
+            <comando>
+        }
+
+    switch:
+        switch(expressão){
+            case 1:
+                <comando>
+                break
+            case 2:
+                <comando>
+                break
+            case 3:
+                <comando>
+                break
+            default:
+                <comando>
+                break
+        }
+
+REPETIÇÕES
+    while:    //teste lógico no início
+        while(condição){
+
+        }
+
+    do while: //teste lógico no final
+        do{
+            <comando>
+        } while(condição)
+
+    for:
+       for(inicio;teste;incremento){
+           <comando>
+       }
+
+VARIÁVEIS COMPOSTAS
+    vetor: num = [0, 1, 2, 3]
+    acrescentar: num.push(<valor>)
+    saber do comprimento: num.length
+    colocar em ordem: num.sort()
+
+    simplificação do for para vetores e objetos
+        for(var pos in num){
+            console.log(num[pos])
+        }
+    //para cada posição em num, vou mostrar num[pos]
+    buscar valores: num.indexOf(<valor>)  //retorna a posição, se não tiver retorna -1
+
+FUNÇÕES 
+ações executadas quando chamadas ou quando ocorrer um evento
+pode receber um parâmetro e retornar um resultado
+    function ação(parâmetros){
+        <comandos>
+    }
+    ação(valor para o parâmetro)   //chamada, dispara a função
+
+    FUNÇÃO RECURSIVA: chama ela mesmo
+    function fatorial(n){
+        if (n==1){
+            return 1
+        } else {
+            return n * fatorial(n-1)
+        }
+    }
+    console.log(fatorial(5))
+
+/*
+    .createElement('option') : cria um elemento option
+
+    lista.appendChild(item)  : adiciona o item na lista
+
+    num.value = '' : limpa o campo
+
+    num.focus() : foca o campo
+
+*/
+
+ME APROFUNDAR EM 
+    functions 
+    objetos
+    modularização
+    RegEx // expressões regulares
+    JSON 
+    AJAX
+    NodeJS
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    

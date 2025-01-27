@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: white;
+            font: normal 1em Verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arvore DOM</h1>
+    <p>Por Marca</p>
+    <p id="msg">por ID</p>
+    <p name="name">Por Name</p>
+    <p class="classe">Por classe</p>
+    <div id="sel">Por Selector</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        var p1 = window.document.getElementsByTagName('p')[0] //1° parágrafo
+        window.document.write('Isso ai ó: ' + p1.innerText)
+        p1.style.color = 'red'
+
+        var p2 = window.document.getElementById('msg')
+        p2.style.background = 'red'
+        window.document.getElementById('msg')
+
+        var p3 = window.document.getElementsByName("name")[0]
+        p3.innerText = 'Por Name!!!!!'
+
+        var p4 = window.document.getElementsByClassName('classe')[0]
+        p4.style.color = 'red'
+
+        var div = window.document.querySelector('div#sel')
+        div.style.background = 'red'
+
+
+
+
+        
+    </script> 
+</body>
+</html>

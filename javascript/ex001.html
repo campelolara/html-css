@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hihi</h1>
+    <script>
+        window.alert("Alerta na Tela!")
+        window.confirm("Ok?");
+        window.prompt("Escreva algo:")
+        document.write("Escreve na Tela")
+
+        // Declarar Variável
+        var nome = window.prompt("Digite seu nome:");
+        window.alert('Olá, ' + nome)
+
+        //Number.parseInt() - Converte para inteiro
+        //pode ser qualquer tipo de dado
+        var n1 = Number.parseInt(window.prompt("Digite um número: "))
+        var n2 = Number.parseInt(window.prompt("Digite outro número: "))
+        var s = n1 + n2
+        //window.alert('A soma dos valores é ' + s)
+        window.alert(`A soma de ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>
